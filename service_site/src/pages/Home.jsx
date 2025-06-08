@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import './Home.css'
+import { Link } from 'react-router';
 
 
 function Home() {
@@ -16,15 +17,15 @@ function Home() {
             <Row className="hero-row">
                 <Col>
                     <h1 className='hero-text'>Heading Text</h1>
-                    <Button className='hero-button'>View Services</Button>
+                    <Button as={Link} to='/services' className='hero-button'>View Services</Button>
                 </Col>
 
             </Row>
         </Container>
 
-        <Container className="home-introduction">
+        <Container className="home-introduction text-center" fluid>
             <Row>
-                <Col xs={6}>
+                <Col xs={6} className="text-start">
                     <h1>Who are we?</h1>
                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
