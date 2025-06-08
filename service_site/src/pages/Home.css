@@ -27,3 +27,8 @@ h1 {
 .home-button {
   background-color: blue;
 }
+
+.home-introduction {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
