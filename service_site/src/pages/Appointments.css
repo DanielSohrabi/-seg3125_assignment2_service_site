@@ -1,0 +1,53 @@
+.hero {
+  background-size: cover;
+  height: 500px;
+  background-image: url("../assets/josh-nuttall-XVTWFHcNIko-unsplash.jpg");
+  margin-bottom: 25px;
+}
+
+.hero-text {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 64px;
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+}
+
+h1 {
+  font-family: 'Inter', sans-serif;
+}
+
+.hero-row {
+  padding-top: 150px;
+  padding-left: 200px
+}
+
+.square-form {
+  border-width: 1px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-block: 25px;
+}
+
+.hero-button {
+  background-color: #4D0000 !important;
+  border-color: #4D0000 !important;
+}
+
+.hours-operation {
+  padding-top: 10px;
+  padding-left: 120px;
+}
+
+.home-introduction {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 200px !important;
+  padding-right: 200px !important;
+}
+
+.contact-info {
+  padding-inline: 125px;
+  padding-block: 25px;
+}
