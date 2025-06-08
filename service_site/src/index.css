@@ -66,3 +66,17 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.hero-button {
+  position: relative;
+  transform: translate(-30%, 300%)
+}
+
+.view-services {
+  position: relative;
+  transform: translate(-325%, 400%)
+}
+
+.hero {
+  width: 100vw;
+}
