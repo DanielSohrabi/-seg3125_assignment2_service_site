@@ -1,23 +1,28 @@
+import React from "react";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import { Link } from "react-router-dom";
+import "./Header.css";
 
-import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import { Link } from 'react-router-dom';
-
-export default function Header(){
-    return (
+export default function Header() {
+  return (
     <>
-      <Navbar bg="primary" data-bs-theme="dark">
-        <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link><Link to="/">Home</Link></Nav.Link>
-            <Nav.Link><Link to="/services">Services</Link></Nav.Link>
-            <Nav.Link><Link to="/appointments">Book an Appointment</Link></Nav.Link>
+      <Navbar className="navBar">
+        <Container className="justify-content-center">
+          <Nav className="d-flex flex-row">
+            <Nav.Link as={Link} to="/" className="navLink mx-5">
+              Home
+            </Nav.Link>
+            <Nav.Link as={Link} to="/services" className="navLink mx-5">
+              Services
+            </Nav.Link>
+            <Nav.Link as={Link} to="/appointments" className="navLink mx-5">
+              Book an Appointment
+            </Nav.Link>
           </Nav>
         </Container>
       </Navbar>
     </>
-  )
+  );
 }

@@ -1,10 +1,66 @@
-import './Services.css'
-import Container from 'react-bootstrap/Container';
-export default function Services(){
-    return (
-         <Container fluid>
+import "./Services.css";
+import ServiceCards from "../components/ServiceCards";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Button from "react-bootstrap/Button";
+import wrenchIcon from "../../assets/wrench.png";
+import tireIcon from "../../assets/tire.png";
+import paintIcon from "../../assets/paint.png";
+import { Link } from "react-router-dom";
 
-          <h1 className='hero-button'>Heading Text</h1>
-        </Container>
-    )
+import "./Services.css";
+
+export default function Services() {
+  const cardData = [
+    {
+      title: "Repair",
+      image: wrenchIcon,
+      bullets: ["Engine check", "Oil change", "Brake adjustment"],
+    },
+    {
+      title: "Tire Services",
+      image: tireIcon,
+      bullets: ["Rotation", "Pressure check"],
+    },
+    {
+      title: "Oil Change",
+      image: paintIcon,
+      bullets: ["Synthetic oils", "Filter replacement"],
+    },
+    {
+      title: "Battery Care",
+      image: wrenchIcon,
+      bullets: ["Battery test", "Replacement", "Charging"],
+    },
+  ];
+  return (
+    <Container fluid>
+      <h1 className="text-center servicesHeader">Services</h1>
+      <Row className="d-flex justify-content-center gap-5 cardRow">
+        {cardData.map((item, index) => {
+          return (
+            <ServiceCards
+              key={index}
+              title={item.title}
+              image={item.image}
+              bullets={item.bullets}
+            />
+          );
+        })}
+      </Row>
+      <Row className="justify-content-center mt-8">
+        <div className="d-grid" style={{ width: "70%" }}>
+          <Button
+            as={Link}
+            to="/appointments"
+            variant="primary"
+            size="lg"
+            className="bookButton"
+          >
+            Book an Appointment
+          </Button>
+        </div>
+      </Row>
+    </Container>
+  );
 }

@@ -1,8 +1,13 @@
-body {
-  margin: 10px;
- 
-  min-width: 100vh;
-  min-height: 100vh;
-  background-color: blue;
+.cardRow{
+    margin-bottom: 7rem;
 }
 
+.servicesHeader{
+    margin-bottom: 5rem;
+    margin-top: 3rem;
+}
+
+.bookButton{
+    background-color: #4D0000 !important;
+    border: #4D0000 !important;
+}

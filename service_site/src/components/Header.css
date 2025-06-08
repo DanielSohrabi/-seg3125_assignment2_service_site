@@ -1,0 +1,15 @@
+.navLink{
+    color: white !important;
+    font-size: 18px !important;
+}
+
+.navbarCenter{
+    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navBar{
+    background-color: #4D0000;
+}
