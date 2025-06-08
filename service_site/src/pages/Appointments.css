@@ -1,3 +1,6 @@
+body{
+  font-family: 'Inter', sans-serif !important;
+}
 .hero {
   background-size: cover;
   height: 500px;
@@ -28,6 +31,7 @@ h1 {
   border-width: 1px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding-block: 25px;
+  margin-bottom: 20px;
 }
 
 .hero-button {

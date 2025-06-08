@@ -13,28 +13,32 @@ import "./Services.css";
 export default function Services() {
   const cardData = [
     {
-      title: "Repair",
+      title: "General Repair",
       image: wrenchIcon,
-      bullets: ["Engine check", "Oil change", "Brake adjustment"],
+      bullets: ["Gears", "Chain replacement", "Pedals", "Handle Bars"],
     },
     {
       title: "Tire Services",
       image: tireIcon,
-      bullets: ["Rotation", "Pressure check"],
+      bullets: ["Rotation", "Pressure check", "Puncture Repair"],
     },
     {
-      title: "Oil Change",
+      title: "Paint",
       image: paintIcon,
-      bullets: ["Synthetic oils", "Filter replacement"],
+      bullets: ["Respray", "Wrapping", "Rust Removal", "Cleaning"],
     },
     {
-      title: "Battery Care",
+      title: "Brakes",
       image: wrenchIcon,
-      bullets: ["Battery test", "Replacement", "Charging"],
+      bullets: [
+        "Pad Replacement",
+        "Brake Line Reattachment",
+        "Seized Brake Repair",
+      ],
     },
   ];
   return (
-    <Container fluid>
+    <Container fluid style={{ height: "calc(100vh - 50px)" }}>
       <h1 className="text-center servicesHeader">Services</h1>
       <Row className="d-flex justify-content-center gap-5 cardRow">
         {cardData.map((item, index) => {

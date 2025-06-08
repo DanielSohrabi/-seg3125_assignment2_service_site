@@ -17,8 +17,8 @@ export default function Header() {
             <Nav.Link as={Link} to="/services" className="navLink mx-5">
               Services
             </Nav.Link>
-            <Nav.Link as={Link} to="/appointments" className="navLink mx-5">
-              Book an Appointment
+            <Nav.Link as={Link} to="/appointments" className="navLink ms-5">
+              Appointment
             </Nav.Link>
           </Nav>
         </Container>

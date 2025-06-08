@@ -1,45 +1,56 @@
+import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
+import Image from "react-bootstrap/Image";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Image from 'react-bootstrap/Image';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-
-import './Home.css'
-import { Link } from 'react-router';
-
+import "./Home.css";
+import { Link } from "react-router";
 
 function Home() {
   return (
     <>
       <div>
         <Container className="hero" fluid>
-            <Row className="hero-row">
-                <Col>
-                    <h1 className='hero-text'>Heading Text</h1>
-                    <Button as={Link} to='/services' className='hero-button'>View Services</Button>
-                </Col>
-
-            </Row>
+          <Row className="hero-row">
+            <Col>
+              <h1 className="hero-text">Jones Bicycle Repair</h1>
+              <Button as={Link} to="/services" className="hero-button">
+                View Services
+              </Button>
+            </Col>
+          </Row>
         </Container>
 
         <Container className="home-introduction text-center" fluid>
-            <Row>
-                <Col xs={6} className="text-start">
-                    <h1>Who are we?</h1>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                </Col>
-                <Col xs={6}>
-                    <Image src="../assets/mechanic.png" fluid></Image>
-                </Col>
-            </Row>
-            
-            
+          <Row>
+            <Col xs={6} className="text-start">
+              <h1 className="py-3">Who are we?</h1>
+              <p>
+                We are Jones Bicycle repair shop and we are repairsman at heart.
+                We are here for any of your bicycle needs at any cost! No repair
+                is too large for us and we can guarantee that. Come book an
+                appointment with us today! Jones has been working with
+                automobiles since age 15, with over 30 years experience working
+                as a car mechanic. Seeking something new, Jones turned to
+                bicycles, and opened up Jones Bike Repair.
+              </p>
+              <p>
+                Whether you need to fix your grandson's bike, or fix your
+                commuting bike, we have a service for you! No repair with us
+                shall take longer than a day, and we will work for you on short
+                notice! Jones is always happy to meet new customers and service
+                the community. Book today!
+              </p>
+            </Col>
+            <Col xs={6}>
+              <Image src="../assets/mechanic.png" fluid></Image>
+            </Col>
+          </Row>
         </Container>
       </div>
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;
