@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import mechanicImage from "../../assets/mechanic.png";
 
 import "./Home.css";
 import { Link } from "react-router";
@@ -44,7 +45,7 @@ function Home() {
               </p>
             </Col>
             <Col xs={6}>
-              <Image src="../assets/mechanic.png" fluid></Image>
+              <Image src={mechanicImage} fluid></Image>
             </Col>
           </Row>
         </Container>
