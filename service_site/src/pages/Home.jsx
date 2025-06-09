@@ -55,7 +55,7 @@ function Home() {
               </p>
             </Col>
             <Col xs={6}>
-              <Image src={mechanicImage} fluid></Image>
+              <img src={mechanicImage} fluid></img>
             </Col>
           </Row>
         </Container>
