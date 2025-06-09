@@ -3,8 +3,8 @@ import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import mechanicImage from "../../assets/mechanic.png";
-import heroImg from "../../assets/josh-nuttall-XVTWFHcNIko-unsplash.jpg";
+import mechanicImage from "./mechanic.png";
+import heroImg from "./josh-nuttall-XVTWFHcNIko-unsplash.jpg";
 
 import "./Home.css";
 import { Link } from "react-router";
