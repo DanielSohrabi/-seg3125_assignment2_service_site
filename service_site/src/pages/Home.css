@@ -2,13 +2,6 @@ body{
   font-family: 'Inter', sans-serif !important;
 }
 
-.hero {
-  background-size: cover;
-  height: 500px;
-  background-image: url("../../assets/josh-nuttall-XVTWFHcNIko-unsplash.jpg");
-  margin-bottom: 25px;
-}
-
 .hero-text {
   color: white;
   font-family: 'Inter', sans-serif;

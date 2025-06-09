@@ -4,6 +4,7 @@ import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import mechanicImage from "../../assets/mechanic.png";
+import heroImg from "../../assets/josh-nuttall-XVTWFHcNIko-unsplash.jpg";
 
 import "./Home.css";
 import { Link } from "react-router";
@@ -12,7 +13,16 @@ function Home() {
   return (
     <>
       <div>
-        <Container className="hero" fluid>
+        <Container
+          className="hero"
+          fluid
+          style={{
+            backgroundSize: "cover",
+            height: "500px",
+            backgroundImage: `url(${heroImg})`,
+            marginBottom: "25px",
+          }}
+        >
           <Row className="hero-row">
             <Col>
               <h1 className="hero-text">Jones Bicycle Repair</h1>
